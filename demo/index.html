@@ -1,0 +1,58 @@
+<html>
+
+    <head>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            #container{
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="container"></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r71/three.min.js"></script>
+        <script src="../equiviewr.js"></script>
+        <script>
+
+            var equiviewr = new EquiViewr({
+                container: document.getElementById('container'),
+                imgSrc: 'photo.jpg',
+                limits: {
+                    minY: -30
+                }
+            });
+
+            equiviewr.addTarget( 1, {
+                title: 'Sea',
+                action: function() {
+                    console.log('Let\'s go swimming');
+                }
+            });
+
+            equiviewr.addTarget( 181, {
+                title: 'Home',
+                action: function() {
+                    console.log('Let\'s go home');
+                }
+            });
+
+            equiviewr.on('move', function(data) {
+                console.log(data);
+            })
+
+        </script>
+
+    </body>
+
+</html>
