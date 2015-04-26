@@ -4,6 +4,20 @@ Equiviewr.js
 A Three.js based equirectangular viewer
 
 ## Api reference
+```js
+var equiviewr = new EquiViewr({
+  // Container of the equiviewer (should be in absolute position)
+    container: document.getElementById('container'),
+  // Default equiviewer photo
+    imgSrc: 'photo.jpg',
+  // Equiviewer display limits
+    limits: {
+      minY: -30,
+      maxY: 80
+    }
+});
+```
+
 
 #####`.on( event, callback )`
 Triggers callback on event
@@ -27,13 +41,12 @@ Reset zoom value
 Update viewer image
 
 #####`.addTarget( dirX, config )`
-Add an arrow on the `dirX` degree.
+Append an arrow on the `dirX` degree, config attributes:
 ```js
-config: {
+{
   title: 'Target title',
   action: function() {
     .. execute on target click ..
   }
 }
 ```
-
