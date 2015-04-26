@@ -20,19 +20,19 @@ var equiviewr = new EquiViewr({
 
 
 #####`.on( event, callback )`
-Triggers callback on event
+Triggers `callback()` on event
 
 #####`.moveSoftTo( coords, onEnd )`
-Moves to coords ( x, y ) softly and execute `onEnd` function on end
+Moves to coords ( x, y ) softly and execute `onEnd()` function on end
 
 #####`.moveTo( coords )`
 Move view to x, y position set in `coords` parameter
 
 #####`.zoomIn( onEnd )`
-Zoom in softly and trigger `onEnd` function on end
+Zoom in softly and trigger `onEnd()` function on end
 
 #####`.zoomOut( onEnd )`
-Zoom out softly and trigger `onEnd` function on end
+Zoom out softly and trigger `onEnd()` function on end
 
 #####`.resetZoom()`
 Reset zoom value
