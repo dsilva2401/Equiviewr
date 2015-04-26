@@ -46,7 +46,7 @@ Append an arrow on the `dirX` degree, config attributes:
 {
   title: 'Target title',
   action: function() {
-    .. execute on target click ..
+    .. execute on click ..
   }
 }
 ```
