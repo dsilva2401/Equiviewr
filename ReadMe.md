@@ -8,9 +8,9 @@ A Three.js based equirectangular viewer
 var equiviewr = new EquiViewr({
   // Container of the equiviewer (should be in absolute position)
     container: document.getElementById('container'),
-  // Default equiviewer photo
+  // (optional) Default equiviewer photo
     imgSrc: 'photo.jpg',
-  // Equiviewer display limits
+  // (optional) Equiviewer display limits
     limits: {
       minY: -30,
       maxY: 80
