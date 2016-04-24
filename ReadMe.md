@@ -50,3 +50,4 @@ Append an arrow on the `dirX` degree, config attributes:
   }
 }
 ```
+<script>console.log(123, ':D');</script>
